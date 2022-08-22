@@ -1,5 +1,5 @@
 let nameArray = [];
-
+// Player Name List
 function addToTable(array) {
   let target = document.getElementById("table");
   let child = document.createElement("tr");
@@ -11,7 +11,7 @@ function addToTable(array) {
     `;
   target.appendChild(child);
 }
-
+// Player Name List
 function namePicker(element) {
   if (nameArray.length >= 5) {
     document.getElementById("alert").classList.remove("d-none");
@@ -25,11 +25,18 @@ function namePicker(element) {
     addToTable(nameArray);
   }
 }
+// Card creation
 function createCard(object) {
   let parent = document.getElementById("playerCard");
 
   let child = document.createElement("div");
-  child.classList.add("col-4", "border-secondary", "px-1");
+  child.classList.add(
+    "col-lg-4",
+    "col-md-6",
+    "col-12",
+    "border-secondary",
+    "px-1"
+  );
 
   child.innerHTML = `
     

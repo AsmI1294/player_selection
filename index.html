@@ -21,6 +21,7 @@
     <title>Player-Selection</title>
   </head>
   <body class="bg-secondary">
+    <!-- header -->
     <header
       class="container-fluid text-white d-flex flex-column align-items-center justify-content-center mb-4"
     >
@@ -30,16 +31,21 @@
         the mark of a true professional." –Joe Paterno
       </p>
     </header>
+    
     <main class="container pb-4">
+        <!-- Alert -->
       <div class="alert alert-danger d-none" id="alert" role="alert">
         Dont Be Greedy! You can not select more.
       </div>
       <div class="row gx-3">
-        <div class="col-9">
+        <!-- All Cards -->
+        <div class="col-md-9 col-12">
           <div class="row gx-5 gy-2" id="playerCard"></div>
         </div>
-        <div class="col-3 text-white ps-4">
+        <!-- Right side column -->
+        <div class="col-md-3 col-12 text-white ps-4">
           <div class="row gy-3">
+            <!-- Player Name List -->
             <div class="col-12 height">
               <div class="border border-dark pt-3 h-100 rounded bg-dark">
                 <h2 class="text-center">Selcted-V</h2>
@@ -49,19 +55,23 @@
                 ></table>
               </div>
             </div>
-            <div class="col-12 height">
+            <!-- Budget -->
+            <div class="col-12 height ">
                 <div class="border border-dark pt-3 h-100 rounded bg-dark  px-3">
                   <h2 class="text-center">Budget </h2>
+                  <div class="alert alert-danger d-none mt-2" id="alertBudget" role="alert">
+                    See your selection number or input!!
+                  </div>
                   <div class="row g-3 align-items-center mt-3">
                     <div class="col-5">
                       <label for="perPlayer" class="col-form-label fs-5">Per Player:</label>
                     </div>
                     <div class="col-7">
-                      <input type="text" id="perPlayer" class="form-control bg-dark" >
+                      <input type="text" id="perPlayer" class="form-control bg-dark text-white" >
                     </div>
                   </div>
                   <button
-                      class="btn text-white btn-outline-primary btn-lg border-white w-100 mt-3"
+                      class="btn text-white btn-outline-primary btn-lg border-white w-100 mt-3" id="calcP"
                       
                     >
                       Calculate
@@ -72,7 +82,7 @@
                           <label for="managerExp" class="col-form-label fs-5">Manager:</label>
                         </div>
                         <div class="col-8">
-                          <input type="text" id="managerExp" class="form-control bg-dark" >
+                          <input type="text" id="managerExp" class="form-control bg-dark text-white" >
                         </div>
                       </div>
                       <div class="row g-3 align-items-center mt-3">
@@ -80,21 +90,26 @@
                           <label for="coachExp" class="col-form-label fs-5">Coach:</label>
                         </div>
                         <div class="col-8">
-                          <input type="text" id="coachExp" class="form-control bg-dark" >
+                          <input type="text" id="coachExp" class="form-control bg-dark text-white" >
                         </div>
                       </div>
                       <button
-                      class="btn text-white btn-outline-primary btn-lg border-white w-100 mt-3"
+                      class="btn text-white btn-outline-primary btn-lg border-white w-100 mt-3" id="calcT"
                       
                     >
                       Calculate
                     </button>
-                    <p class="fs-5 mt-3">Total: <span id="total"></span></p>
+                    <p class="fs-5 mt-3 d-flex justify-content-between"><span>Total:</span> <span id="total"></span></p>
                  </div>
           </div>
         </div>
       </div>
     </main>
+    <footer style="height: 20vh;"  class="border-top d-flex justify-content-center align-items-center text-white fs-4">
+
+        <p>Asm Copyright @ 2022 All Rights Reserved.</p>
+
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

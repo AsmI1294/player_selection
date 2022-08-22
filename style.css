@@ -7,14 +7,15 @@ header {
   height: 60vh;
 }
 h1,
-h2 {
+h2,
+footer {
   font-family: "Berkshire Swash", cursive;
 }
 .cardImg {
-  height: 60vh;
+  height: 50vh;
   object-fit: cover;
   object-position: top;
 }
 .height {
-  height: 75vh;
+  height: 85vh;
 }
