@@ -1,0 +1,20 @@
+header {
+  background-image: url("images/nike.jfif");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  height: 60vh;
+}
+h1,
+h2 {
+  font-family: "Berkshire Swash", cursive;
+}
+.cardImg {
+  height: 60vh;
+  object-fit: cover;
+  object-position: top;
+}
+.height {
+  height: 75vh;
+}
