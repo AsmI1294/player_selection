@@ -47,29 +47,3 @@ createCard(neymer);
 createCard(messi);
 createCard(ronaldo);
 createCard(kodu);
-let nameArray = [];
-
-function namePicker(element) {
-  if (nameArray.length >= 5) {
-    document.getElementById("alert").classList.remove("d-none");
-    return;
-  } else {
-    let name = element.parentNode.children[0].innerText;
-    element.parentNode.children[2].setAttribute("disabled", "");
-    element.parentNode.children[2].innerText = "SELECTED";
-    nameArray.push(name);
-    console.log(nameArray);
-    addToTable(nameArray);
-  }
-}
-function addToTable(array) {
-  let target = document.getElementById("table");
-  let child = document.createElement("tr");
-
-  for (let name of array)
-    child.innerHTML = `
-    <th scope="row">${array.length}.</th>
-                <td>${name}</td>
-    `;
-  target.appendChild(child);
-}

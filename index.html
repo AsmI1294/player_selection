@@ -50,10 +50,47 @@
               </div>
             </div>
             <div class="col-12 height">
-                <div class="border border-dark pt-3 h-100 rounded bg-dark">
+                <div class="border border-dark pt-3 h-100 rounded bg-dark  px-3">
                   <h2 class="text-center">Budget </h2>
-                  
-                </div>
+                  <div class="row g-3 align-items-center mt-3">
+                    <div class="col-5">
+                      <label for="perPlayer" class="col-form-label fs-5">Per Player:</label>
+                    </div>
+                    <div class="col-7">
+                      <input type="text" id="perPlayer" class="form-control bg-dark" >
+                    </div>
+                  </div>
+                  <button
+                      class="btn text-white btn-outline-primary btn-lg border-white w-100 mt-3"
+                      
+                    >
+                      Calculate
+                    </button>
+                    <p class="fs-5 mt-3">Player Expenses: <span id="playerExpenses"></span></p>
+                    <div class="row g-3 align-items-center mt-3">
+                        <div class="col-4">
+                          <label for="managerExp" class="col-form-label fs-5">Manager:</label>
+                        </div>
+                        <div class="col-8">
+                          <input type="text" id="managerExp" class="form-control bg-dark" >
+                        </div>
+                      </div>
+                      <div class="row g-3 align-items-center mt-3">
+                        <div class="col-4">
+                          <label for="coachExp" class="col-form-label fs-5">Coach:</label>
+                        </div>
+                        <div class="col-8">
+                          <input type="text" id="coachExp" class="form-control bg-dark" >
+                        </div>
+                      </div>
+                      <button
+                      class="btn text-white btn-outline-primary btn-lg border-white w-100 mt-3"
+                      
+                    >
+                      Calculate
+                    </button>
+                    <p class="fs-5 mt-3">Total: <span id="total"></span></p>
+                 </div>
           </div>
         </div>
       </div>
